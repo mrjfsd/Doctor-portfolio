@@ -4,7 +4,8 @@ import Aurora from './Aurora'
 export default function Hero() {
   return (
     <section className="relative pt-28 pb-16 sm:pt-36 sm:pb-20 overflow-hidden bg-gradient-to-b from-purple-50/40 to-white">
-      <div className="absolute inset-0 pointer-events-none">
+      {/* Ambient Aurora background — Desktop only */}
+      <div className="hidden lg:block absolute inset-0 pointer-events-none">
         <Aurora
           colorStops={["#cae2c7", "#eecdcd", "#cac5e2"]}
           blend={0.5}
