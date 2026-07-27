@@ -43,8 +43,8 @@ export default function Hero() {
             {/* Doctor Image Container */}
             <div className="relative overflow-visible flex items-center justify-start w-full max-w-[420px] sm:max-w-[520px] md:max-w-[600px] lg:max-w-[680px] mr-auto -ml-[60px] lg:-ml-[40px] -mb-12 lg:mb-0 transition-all duration-300">
 
-              {/* Stacked Background Typography (Dr. / PRAVEEN) with Gradient Fade & Crisp Shadows */}
-              <div className="absolute left-[60%] lg:left-[68%] -top-[10%] z-0 flex flex-col items-start leading-[0.82] select-none pointer-events-none whitespace-nowrap antialiased">
+              {/* Stacked Background Typography — Desktop only */}
+              <div className="hidden lg:block absolute left-[60%] lg:left-[68%] -top-[10%] z-0 flex flex-col items-start leading-[0.82] select-none pointer-events-none whitespace-nowrap antialiased">
 
                 {/* Top Line: Dr. — solid, dark, high-contrast */}
                 <span
