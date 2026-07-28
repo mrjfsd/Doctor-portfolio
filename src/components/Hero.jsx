@@ -3,7 +3,41 @@ import Aurora from './Aurora'
 
 export default function Hero() {
   return (
-    <section className="relative pt-28 pb-16 sm:pt-36 sm:pb-20 overflow-hidden bg-gradient-to-b from-purple-50/40 to-white">
+    <section className="relative pt-28 pb-16 sm:pt-36 sm:pb-20 overflow-hidden lg:bg-gradient-to-b lg:from-purple-50/40 lg:to-white" style={{ isolation: 'isolate' }}>
+      {/* Mobile Background with Live-Editable CSS Variables */}
+      <div
+        id="mobile-bg-container"
+        className="block lg:hidden absolute inset-0 -z-10 pointer-events-none overflow-hidden select-none"
+        style={{
+          '--blue-wash-opacity': 0.4,
+          '--grid-opacity': 0.1,
+          background: 'linear-gradient(rgb(211 207 219) 0%, rgba(216, 247, 240, 0.4) 50%, rgb(225, 225, 241) 100%)',
+        }}
+      >
+        {/* SVG Grid Overlay — opacity controlled by --grid-opacity CSS variable */}
+        <svg
+          className="absolute inset-0 w-full h-full stroke-indigo-600"
+          style={{ opacity: 'var(--grid-opacity)' }}
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <defs>
+            <pattern id="mobile-hero-grid-subtle" width="28" height="28" patternUnits="userSpaceOnUse">
+              <path d="M 28 0 L 0 0 0 28" fill="none" strokeWidth="1.2" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#mobile-hero-grid-subtle)" />
+        </svg>
+
+        {/* Seamless Bottom Fade-Out — blends grid into the next section */}
+        <div
+          className="absolute bottom-0 left-0 right-0 h-24 pointer-events-none"
+          style={{
+            background: 'linear-gradient(to bottom, rgba(225,225,241,0) 0%, #ffffff 100%)',
+          }}
+        />
+      </div>
+
       {/* Ambient Aurora background — Desktop only */}
       <div className="hidden lg:block absolute inset-0 pointer-events-none">
         <Aurora
