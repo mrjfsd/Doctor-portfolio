@@ -61,17 +61,32 @@ export default function Hero() {
               </span>{' '}
               Starts Here
             </h1>
-            <p className="text-lg text-gray-500 mb-8 max-w-lg leading-relaxed">
+            <p className="text-lg text-gray-500 mb-5 max-w-lg leading-relaxed">
               Professional support for stress, anxiety, grief, and life transitions.
               Evidence-based care tailored to your unique journey.
             </p>
-            <div className="flex flex-wrap gap-4 ml-4 sm:ml-6 lg:ml-0">
-              <a href="#contact" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-3.5 rounded-full font-semibold transition-all hover:shadow-lg hover:shadow-primary/25">
+            {/* Hero Action Buttons Container */}
+            <div className="flex flex-wrap gap-3 mt-4 sm:mt-5 lg:ml-0">
+
+              {/* Primary CTA Button */}
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-3.5 rounded-full font-semibold transition-all hover:shadow-lg hover:shadow-primary/25"
+              >
                 Book an Appointment <ArrowUpRight size={18} />
               </a>
-              <a href="#contact" className="inline-flex items-center gap-2 border-2 border-gray-200 hover:border-primary text-gray-700 hover:text-primary px-6 py-3.5 rounded-full font-semibold transition-all">
-                <Phone size={18} /> Schedule a Call
+
+              {/* Translucent Glass Secondary CTA Button */}
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full font-semibold transition-all duration-300 bg-white/45 backdrop-blur-md border border-white/70 text-slate-800 hover:bg-white/60 hover:scale-[1.02] active:scale-[0.98]"
+                style={{
+                  boxShadow: 'inset 0 1px 1.5px 0 rgba(255,255,255,0.8), inset 0 -1px 1.5px 0 rgba(0,0,0,0.04), 0 8px 20px -4px rgba(79,70,229,0.06)',
+                }}
+              >
+                <Phone size={18} className="text-indigo-600" /> Book a Discovery Call
               </a>
+
             </div>
           </div>
           <div className="order-1 lg:order-2 flex justify-center">
