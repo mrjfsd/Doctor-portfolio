@@ -11,7 +11,7 @@ export default function Hero() {
         style={{
           '--blue-wash-opacity': 0.4,
           '--grid-opacity': 0.1,
-          background: 'linear-gradient(rgb(211 207 219) 0%, rgba(216, 247, 240, 0.4) 50%, rgb(225, 225, 241) 100%)',
+          background: 'linear-gradient(rgb(241 239 243) 0%, rgb(249 249 249 / 40%) 50%, rgb(232 232 245) 100%)',
         }}
       >
         {/* SVG Grid Overlay — opacity controlled by --grid-opacity CSS variable */}
