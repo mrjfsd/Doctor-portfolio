@@ -32,25 +32,21 @@ export default function Services() {
                 Professional physiological services tailored to your needs. Evidence-based 
                 approaches for lasting wellness.
               </p>
-              <div className="relative w-48 h-48 mx-auto lg:mx-0">
-                <svg className="absolute inset-0 w-full h-full animate-spin-slow" viewBox="0 0 200 200" style={{ animation: 'spin 20s linear infinite' }}>
-                  <defs>
-                    <path id="circlePath" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" />
-                  </defs>
-                  <text fontSize="9" fill="#7C3AED" fontWeight="600" letterSpacing="2">
-                    <textPath href="#circlePath" startOffset="0%">
-                      What Kind of Service I Provide
-                    </textPath>
-                    <textPath href="#circlePath" startOffset="50%">
-                      + What Kind of Service I Provide
-                    </textPath>
-                  </text>
-                </svg>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <a href="#" className="w-16 h-16 bg-primary hover:bg-primary-dark text-white rounded-full flex items-center justify-center font-semibold text-sm transition-all hover:shadow-lg hover:shadow-primary/25">
-                    View All
-                  </a>
-                </div>
+              {/* Custom PNG Services Badge */}
+              <div className="flex justify-center items-center my-6 lg:justify-start">
+                <img
+                  src="/assests/services.png"
+                  alt="Services Badge"
+                  className="object-contain transition-transform duration-300 hover:scale-105"
+                  style={{
+                    width: 'calc(var(--spacing) * 50)',
+                    height: 'calc(var(--spacing) * 50)',
+                  }}
+                  onError={(e) => {
+                    e.currentTarget.onerror = null;
+                    e.currentTarget.src = '/assests/services.PNG';
+                  }}
+                />
               </div>
             </div>
           </div>

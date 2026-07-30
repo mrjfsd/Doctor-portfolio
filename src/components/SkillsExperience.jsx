@@ -1,4 +1,3 @@
-import { ThumbsUp } from 'lucide-react'
 
 const timeline = [
   {
@@ -40,9 +39,19 @@ export default function SkillsExperience() {
             </p>
             <div className="relative w-56 h-56 sm:w-64 sm:h-64 mx-auto lg:mx-0">
               <div className="w-full h-full bg-primary/10 rounded-full flex items-center justify-center">
-                <div className="w-40 h-40 sm:w-48 sm:h-48 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-full flex items-center justify-center">
-                  <ThumbsUp size={48} className="text-primary" />
-                </div>
+                <img
+                  src="/assests/skills.png"
+                  alt="Skills & Experience"
+                  className="object-contain"
+                  style={{
+                    width: 'calc(var(--spacing) * 80)',
+                    height: 'calc(var(--spacing) * 80)',
+                  }}
+                  onError={(e) => {
+                    e.currentTarget.onerror = null;
+                    e.currentTarget.src = '/assests/skills.PNG';
+                  }}
+                />
               </div>
             </div>
           </div>

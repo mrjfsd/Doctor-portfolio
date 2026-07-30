@@ -23,6 +23,8 @@
   --color-border: #E5E7EB;
   --color-ring: #7C3AED;
   --radius: 0.5rem;
+  /* Override Tailwind default text-3xl (1.875rem → 2.2rem) */
+  --text-3xl: 2.2rem;
 }
 
 html {

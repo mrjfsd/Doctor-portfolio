@@ -8,8 +8,16 @@ export default function About() {
           <div className="flex justify-center relative">
             <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80">
               <div className="w-full h-full bg-bg-beige rounded-full flex items-center justify-center">
-                <div className="w-40 h-40 sm:w-48 sm:h-48 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full flex items-center justify-center">
-                  <span className="text-5xl sm:text-6xl font-bold text-primary">AS</span>
+                <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden shadow-inner">
+                  <img
+                    src="/assests/Dr-profile.png"
+                    alt="Dr. Adam Smith Profile"
+                    className="w-full h-full object-cover object-center"
+                    onError={(e) => {
+                      e.currentTarget.onerror = null;
+                      e.currentTarget.src = '/assests/Dr-profile.jpg';
+                    }}
+                  />
                 </div>
               </div>
               <div className="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-lg px-4 py-3 animate-float">
