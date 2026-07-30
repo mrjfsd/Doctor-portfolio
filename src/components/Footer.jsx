@@ -1,9 +1,11 @@
 import { Plus, Globe, MessageCircle, Camera, Code } from 'lucide-react'
 
 const footerLinks = [
-  { label: 'Home', href: '#' },
-  { label: 'Service', href: '#services' },
-  { label: 'Testimonial', href: '#testimonials' },
+  { label: 'Home', href: '#hero' },
+  { label: 'About', href: '#about' },
+  { label: 'Expertise & Services', href: '#services' },
+  { label: 'Experience', href: '#skills' },
+  { label: 'Research', href: '#testimonials' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -23,9 +25,9 @@ export default function Footer() {
             <div className="w-9 h-9 bg-primary rounded-xl flex items-center justify-center text-white transition-transform group-hover:rotate-90 duration-300">
               <Plus size={20} strokeWidth={3} />
             </div>
-            <span className="text-xl font-extrabold text-white tracking-tight">Dr.</span>
+            <span className="text-xl font-extrabold text-white tracking-tight">Dr. Praveen</span>
           </a>
-          <nav className="flex items-center gap-6">
+          <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
             {footerLinks.map((link) => (
               <a key={link.label} href={link.href} className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
                 {link.label}
@@ -41,8 +43,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 py-6 text-xs">
-          <p>&copy; 2026 Dr. Adam Smith. All rights reserved.</p>
-          <div className="flex items-center gap-4">
+          <p>&copy; 2026 Dr. Praveen Kumar R. All rights reserved.</p>
+          <div className="flex flex-wrap items-center gap-4">
+            <span className="bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md font-medium">Languages Spoken: Kannada | English | Hindi</span>
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms &amp; Conditions</a>
           </div>

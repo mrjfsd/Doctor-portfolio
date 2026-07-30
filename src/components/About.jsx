@@ -11,7 +11,7 @@ export default function About() {
                 <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden shadow-inner">
                   <img
                     src="/assests/Dr-profile.png"
-                    alt="Dr. Adam Smith Profile"
+                    alt="Dr. Praveen Kumar R Profile"
                     className="w-full h-full object-cover object-center"
                     onError={(e) => {
                       e.currentTarget.onerror = null;
@@ -36,29 +36,55 @@ export default function About() {
               </div>
               <div className="absolute -bottom-4 -right-4 bg-primary text-white rounded-2xl shadow-lg px-4 py-3 animate-float" style={{ animationDelay: '1.5s' }}>
                 <p className="text-xs opacity-80">Experience</p>
-                <p className="text-lg font-bold">10+ Years</p>
+                <p className="text-lg font-bold">15+ Years</p>
               </div>
             </div>
           </div>
           <div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-6">
-              Dr. Adam Smith <span className="inline-block animate-bounce">👋</span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-2 whitespace-nowrap">
+              Dr. Praveen Kumar R <span className="inline-block animate-bounce">👋</span>
             </h2>
-            <div className="space-y-4 text-gray-500 leading-relaxed mb-8">
+            <p className="text-sm font-semibold text-primary mb-6 uppercase tracking-wider">
+              MBBS, MS (ENT) — Consultant ENT &amp; Head &amp; Neck Surgeon
+            </p>
+            <div className="space-y-4 text-gray-500 leading-relaxed mb-6">
               <p>
-                Dr. Adam Smith is a licensed physiologist with over a decade of experience 
-                helping individuals navigate life's challenges. Specializing in cognitive 
-                behavioral therapy and mindfulness-based approaches, he provides a safe, 
-                judgment-free space for healing and growth.
+                Dr. R. Praveen Kumar is a highly skilled ENT specialist in Mysuru with focused expertise in otology, rhinology, laryngology, and voice disorders. Currently practicing at Manipal Hospital Mysore, he brings over 15 years of surgical excellence.
               </p>
               <p>
-                His approach combines evidence-based treatments with genuine compassion, 
-                empowering patients to build resilience, develop coping strategies, and 
-                achieve lasting mental wellness.
+                His clinical background includes specialized training and exposure at premier institutes like Kidwai Memorial Institute of Oncology and the All India Institute of Speech &amp; Hearing (AIISH), Mysore.
               </p>
             </div>
-            <a href="#" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-3.5 rounded-full font-semibold transition-all hover:shadow-lg hover:shadow-primary/25">
-              Learn More <ArrowUpRight size={18} />
+            
+            <div className="mb-8 space-y-3">
+              <div className="flex items-start gap-2.5">
+                <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                  <span className="text-xs text-primary font-bold">✓</span>
+                </div>
+                <p className="text-sm text-gray-600">
+                  <strong className="text-gray-900">Qualifications:</strong> MBBS (Shree Siddhartha Medical College, Tumkur) &amp; MS (ENT) (KIMS, Hubli).
+                </p>
+              </div>
+              <div className="flex items-start gap-2.5">
+                <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                  <span className="text-xs text-primary font-bold">✓</span>
+                </div>
+                <p className="text-sm text-gray-600">
+                  <strong className="text-gray-900">Diagnostic precision:</strong> Using state-of-the-art endoscopic evaluations.
+                </p>
+              </div>
+              <div className="flex items-start gap-2.5">
+                <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                  <span className="text-xs text-primary font-bold">✓</span>
+                </div>
+                <p className="text-sm text-gray-600">
+                  <strong className="text-gray-900">Patient-focused:</strong> Combining surgical excellence with clear, direct communication.
+                </p>
+              </div>
+            </div>
+
+            <a href="#contact" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-3.5 rounded-full font-semibold transition-all hover:shadow-lg hover:shadow-primary/25">
+              Book a Consultation <ArrowUpRight size={18} />
             </a>
           </div>
         </div>

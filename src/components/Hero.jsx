@@ -50,20 +50,21 @@ export default function Hero() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           <div className="order-2 lg:order-1">
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
-              <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-              Welcome to <span className="bg-white/60 text-primary-dark px-2 py-0.5 rounded-md">Dr. Adam Smith</span> Physiologist
+            <div className="flex items-center gap-1.5 bg-primary/10 text-primary text-[13px] sm:text-sm font-semibold px-2.5 sm:px-4 py-1 sm:py-1.5 rounded-full mb-6 w-fit whitespace-nowrap overflow-hidden">
+              <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-primary rounded-full animate-pulse flex-shrink-0" />
+              <span>Welcome to</span>
+              <span className="bg-white/60 text-primary-dark px-1.5 sm:px-2 py-0.5 rounded-md font-bold flex-shrink-0">Dr. Praveen Kumar R</span>
+              <span>ENT Surgeon</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
-              Your Path to{' '}
+              Expert Care in{' '}
               <span className="bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
-                Mental Wellness
+                ENT, Voice Disorders
               </span>{' '}
-              Starts Here
+              &amp; Head &amp; Neck Surgery
             </h1>
             <p className="text-lg text-gray-500 mb-5 max-w-lg leading-relaxed">
-              Professional support for stress, anxiety, grief, and life transitions.
-              Evidence-based care tailored to your unique journey.
+              Delivering surgical precision, advanced endoscopic evaluation, and compassionate patient care in Mysuru with over 15 years of experience.
             </p>
             {/* Hero Action Buttons Container */}
             <div className="flex flex-wrap gap-3 mt-4 sm:mt-5 lg:ml-0">

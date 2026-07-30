@@ -6,54 +6,54 @@ const testimonials = [
     avatar: 'SJ',
     color: 'bg-red-400',
     rating: 4.8,
-    country: '🇺🇸',
-    role: 'Student',
-    text: 'Dr. Adam Smith has been instrumental in my journey. His compassionate approach and expertise made me feel heard and understood from day one.',
+    country: '🇮🇳',
+    role: 'Patient (Ear Surgery)',
+    text: 'Dr. Praveen Kumar R has been instrumental in my recovery. His explanation of the tympanoplasty surgery and post-op care made me feel heard and safe from day one.',
   },
   {
     name: 'Michael Chen',
     avatar: 'MC',
     color: 'bg-blue-400',
     rating: 4.9,
-    country: '🇨🇦',
-    role: 'Engineer',
-    text: 'After years of struggling with anxiety, Dr. Smith provided the tools and support I needed to take control of my life. Highly recommend his services.',
+    country: '🇮🇳',
+    role: 'Patient (Sinusitis)',
+    text: 'After years of struggling with nasal blockage, Dr. Praveen performed FESS. I can finally breathe easily. He is an exceptionally skilled rhinology surgeon.',
   },
   {
     name: 'Emma Williams',
     avatar: 'EW',
     color: 'bg-green-400',
     rating: 4.7,
-    country: '🇬🇧',
-    role: 'Teacher',
-    text: 'The therapy sessions with Dr. Smith have been transformative. His holistic approach addresses both the mind and body for complete wellness.',
+    country: '🇮🇳',
+    role: 'Patient (Voice Disorder)',
+    text: 'The microlaryngeal surgery performed by Dr. Praveen for my vocal cord cyst was completely successful. My voice has fully recovered. Exceptional care!',
   },
   {
     name: 'James Rodriguez',
     avatar: 'JR',
     color: 'bg-yellow-400',
     rating: 4.9,
-    country: '🇪🇸',
-    role: 'Designer',
-    text: 'Dr. Smith creates a safe and welcoming environment. His evidence-based techniques helped me develop coping strategies that work for my lifestyle.',
+    country: '🇮🇳',
+    role: 'Patient (General ENT)',
+    text: 'Dr. Praveen creates a supportive environment. His diagnostic precision using nasal endoscopy is outstanding, and his treatment plans are direct and effective.',
   },
   {
     name: 'Lisa Thompson',
     avatar: 'LT',
     color: 'bg-purple-400',
     rating: 4.8,
-    country: '🇦🇺',
-    role: 'Nurse',
-    text: 'I was initially hesitant about therapy, but Dr. Smith made the process comfortable and rewarding. His expertise in physiology is remarkable.',
+    country: '🇮🇳',
+    role: 'Patient (Ear Infection)',
+    text: 'I was hesitant about clinical evaluations for my hearing issues, but Dr. Praveen explained the diagnostic process clearly and handled my treatment with extreme care.',
   },
   {
     name: 'David Kim',
     avatar: 'DK',
     color: 'bg-pink-400',
     rating: 4.6,
-    country: '🇰🇷',
-    role: 'Entrepreneur',
-    text: 'Dr. Smith understands the unique pressures of modern life. His practical advice and genuine care have made a significant difference in my wellbeing.',
+    country: '🇮🇳',
+    role: 'Patient (Tonsillectomy)',
+    text: 'Dr. Praveen understands patient concerns perfectly. His expertise and surgical execution at Manipal Hospital Mysore gave us complete peace of mind.',
   },
 ]
 
@@ -62,7 +62,7 @@ export default function Testimonials() {
     <section id="testimonials" className="py-16 sm:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 text-center mb-4 max-w-2xl mx-auto">
-          What our great customers say about Dr. Adam Smith
+          What Patients Say About Dr. Praveen Kumar R
         </h2>
         <p className="text-gray-500 text-center mb-12 max-w-lg mx-auto">
           Hear from those who have experienced transformative care and compassionate support.

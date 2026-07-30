@@ -13,7 +13,7 @@ export default function Contact() {
     <section id="contact" className="py-16 sm:py-24 bg-bg-cream">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2
-          className="font-extrabold text-gray-900 text-center mb-12 flex items-center justify-center gap-2"
+          className="font-extrabold text-gray-900 text-center mb-2 flex items-center justify-center gap-2"
           style={{
             fontFamily: "'Fredoka', sans-serif",
             fontWeight: 700,
@@ -30,15 +30,18 @@ export default function Contact() {
             with me
           </span>
         </h2>
+        <p className="text-center text-gray-500 mb-10 text-sm font-medium">
+          Practice Location: Manipal Hospital Mysore, Mysuru, Karnataka
+        </p>
         <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
           <div>
             <select className="w-full px-5 py-3.5 rounded-xl border border-gray-200 bg-white text-gray-700 font-medium text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all appearance-none">
               <option value="">What is your concern?</option>
-              <option value="anxiety">Anxiety & Stress</option>
-              <option value="depression">Depression</option>
-              <option value="relationships">Relationship Issues</option>
-              <option value="trauma">Trauma & Grief</option>
-              <option value="other">Other</option>
+              <option value="otology">Ear &amp; Hearing Concerns (Otology)</option>
+              <option value="rhinology">Sinus &amp; Nasal Blockage (Rhinology)</option>
+              <option value="laryngology">Voice &amp; Throat Disorders (Laryngology)</option>
+              <option value="head-neck">Head &amp; Neck Swellings / Surgeries</option>
+              <option value="general">General ENT Consultation</option>
             </select>
           </div>
           <div className="grid sm:grid-cols-2 gap-5">

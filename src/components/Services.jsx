@@ -1,20 +1,41 @@
-import { ArrowUpRight, ArrowRight, Heart, Users } from 'lucide-react'
+import { ArrowUpRight, ArrowRight, Volume2, Activity, Mic, Shield, Eye } from 'lucide-react'
 
 const services = [
   {
     id: '01',
-    title: 'Family Physiology',
-    icon: Heart,
-    description: 'Comprehensive family therapy and relationship counseling.',
+    title: 'Otology (Ear Care)',
+    icon: Volume2,
+    description: 'Tympanoplasty, Ossiculoplasty, Mastoidectomy (Canal wall up/down), Management of Chronic Otitis Media & ear diseases.',
     subLink: 'Explore',
   },
   {
     id: '02',
-    title: 'Consultations',
-    icon: Users,
-    description: 'One-on-one sessions for personalized care.',
+    title: 'Rhinology (Nose & Sinus)',
+    icon: Activity,
+    description: 'Functional Endoscopic Sinus Surgery (FESS), Endoscopic Polypectomy, Dacryocystorhinostomy (DCR), Augmentation Rhinoplasty.',
     subLink: 'Explore',
     highlighted: true,
+  },
+  {
+    id: '03',
+    title: 'Laryngology & Voice Disorders',
+    icon: Mic,
+    description: 'Microlaryngeal Surgeries, Vocal Cord Lesion Excision, Cyst Removal, Voice-Restorative Procedures.',
+    subLink: 'Explore',
+  },
+  {
+    id: '04',
+    title: 'Head & Neck Surgery',
+    icon: Shield,
+    description: 'Parotidectomy, Laryngectomy, Neck Dissection, Maxillectomy, and Tumor Resections.',
+    subLink: 'Explore',
+  },
+  {
+    id: '05',
+    title: 'Diagnostic Endoscopy',
+    icon: Eye,
+    description: 'Diagnostic Nasal Endoscopy, Direct Laryngoscopy, Oesophagoscopy.',
+    subLink: 'Explore',
   },
 ]
 
@@ -26,11 +47,10 @@ export default function Services() {
           <div>
             <div className="sticky top-28">
               <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">
-                What Kind of Service I Provide
+                Expertise &amp; Services
               </h2>
               <p className="text-gray-500 mb-8 max-w-md">
-                Professional physiological services tailored to your needs. Evidence-based 
-                approaches for lasting wellness.
+                Providing advanced medical and surgical care for ear, nose, throat, voice, and head &amp; neck disorders.
               </p>
               {/* Custom PNG Services Badge */}
               <div className="flex justify-center items-center my-6 lg:justify-start">

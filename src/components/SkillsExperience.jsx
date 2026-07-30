@@ -1,24 +1,24 @@
 
 const timeline = [
   {
-    period: '2020 - Present',
-    title: 'Medical Officer',
-    institution: 'Sylhet M. A. G. Osmani Medical College',
-  },
-  {
-    period: '2015 - 2020',
-    title: 'Physiologist',
-    institution: 'Womens Medical College, Sylhet',
-  },
-  {
-    period: '2011 - 2014',
-    title: 'Head of Physiologist',
-    institution: 'Jalalabad Ragib & Rabeya Medical, Sylhet',
-  },
-  {
     period: '2010 - Present',
-    title: 'Physiologist',
-    institution: 'Popular Diagnostic Center, Sylhet',
+    title: 'Consultant – ENT & Head & Neck Surgery',
+    institution: 'Manipal Hospital Mysore (15+ Years overall clinical exposure)',
+  },
+  {
+    period: 'Academic & Research',
+    title: 'Published Clinical Researcher',
+    institution: 'Focused on Chronic Otitis Media, Eustachian Tube Function, and rare ENT conditions in recognized medical journals.',
+  },
+  {
+    period: 'Specialized Training',
+    title: 'Oncology & Laryngology Exposure',
+    institution: 'Specialized training exposure at Kidwai Memorial Institute of Oncology & All India Institute of Speech & Hearing (AIISH), Mysore.',
+  },
+  {
+    period: 'Workshops & Conferences',
+    title: 'Surgical Training & Exchange',
+    institution: 'Active participant in national & international surgical workshops and conferences.',
   },
 ]
 
@@ -31,11 +31,10 @@ export default function SkillsExperience() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">
-              Skills & Experience
+              Experience &amp; Academic Timeline
             </h2>
             <p className="text-gray-600 mb-8 max-w-md leading-relaxed">
-              Over a decade of clinical experience in leading medical institutions. 
-              Dedicated to providing exceptional physiological care and treatment.
+              Providing comprehensive ENT and Head &amp; Neck surgical care. Dedicated to academic growth, research excellence, and clinical precision.
             </p>
             <div className="relative w-56 h-56 sm:w-64 sm:h-64 mx-auto lg:mx-0">
               <div className="w-full h-full bg-primary/10 rounded-full flex items-center justify-center">
